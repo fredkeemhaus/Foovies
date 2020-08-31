@@ -28,8 +28,8 @@ export default ({ navigation, route }) => {
           } else if (route.name === "TV") {
             iconName += "tv";
           } else if (route.name === "Search") {
-            iconName += "Search";
-          } else if (route.name === "Favorites") {
+            iconName += "search";
+          } else if (route.name === "Discovery") {
             iconName += "heart";
           }
           return (
@@ -52,7 +52,7 @@ export default ({ navigation, route }) => {
       <Tabs.Screen name="Movies" component={Movies} />
       <Tabs.Screen name="TV" component={Tv} />
       <Tabs.Screen name="Search" component={Search} />
-      <Tabs.Screen name="Favorites" component={Favs} />
+      <Tabs.Screen name="Discovery" component={Favs} />
     </Tabs.Navigator>
   );
 };
