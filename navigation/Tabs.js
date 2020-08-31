@@ -28,13 +28,13 @@ export default ({ navigation, route }) => {
           } else if (route.name === "TV") {
             iconName += "tv";
           } else if (route.name === "Search") {
-            iconName += "saerch";
+            iconName += "Search";
           } else if (route.name === "Favorites") {
             iconName += "heart";
           }
           return (
             <Ionicons
-              name="ios-film"
+              name={iconName}
               color={focused ? "white" : "grey"}
               size={26}
             />
